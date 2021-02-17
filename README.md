@@ -6,4 +6,4 @@ Based off Monica Powell's [Grey's Anatomy Lorem Ipsum Generator](https://www.abo
 
 [View live project](https://sharp-fermi-5dc2a8.netlify.app/)
 
-![Zelda lorem ipsum generator screenshot]("./zelda-lorem-ipsum-screenshot.png")
+![Zelda lorem ipsum generator screenshot](https://res.cloudinary.com/gerhynes/image/upload/q_auto/f_auto/v1613597569/Screenshot_2021-02-17_Zelda_Lorem_Ipsum_Demo_u4ou7x.png)
