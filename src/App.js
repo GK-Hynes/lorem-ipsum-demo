@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import parse from "html-react-parser";
+import triforce from "./Triforce.png";
 import "./App.css";
 
 class LambdaCall extends Component {
@@ -22,11 +23,14 @@ class LambdaCall extends Component {
 
     return (
       <p>
-        <button onClick={this.handleClick("generate-lorem-ipsum")}>
+        <button
+          className="button"
+          onClick={this.handleClick("generate-lorem-ipsum")}
+        >
           {loading ? "Loading..." : "Generate Lorem Ipsum"}
         </button>
-        <br />
-        <span>{msg}</span>
+
+        <div className="lorem-ipsum-container">{msg && parse(msg)}</div>
       </p>
     );
   }
@@ -37,10 +41,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <h1>Generate some Zelda-themed lorem ipsum</h1>
+          <img
+            src={triforce}
+            className="App-logo"
+            alt="Triforce - from Wikimedia Commons"
+          />
           <LambdaCall />
         </header>
       </div>
